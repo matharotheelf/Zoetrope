@@ -17,7 +17,27 @@ public class VRSelectionFrame : Frame
 
     public void ActivationLightOff()
     {
-        frameMaterial.SetColor("_EmissionColor", nonActivationColor);
-        frameMaterial.EnableKeyword("_EMISSION");
+        if (!isSelected)
+        {
+            frameMaterial.SetColor("_EmissionColor", nonActivationColor);
+            frameMaterial.EnableKeyword("_EMISSION");
+        }
+    }
+
+    public override void Select()
+    {
+        // send message to animation selection that this animation is select, changing zoetrope frames
+        animationSelection.SelectAnimation(this);
+
+        // set is selected
+        isSelected = true;
+        ActivationLightUp();
+    }
+
+    public override void Deselect()
+    {
+        // set is deselected
+        isSelected = false;
+        ActivationLightOff();
     }
 }

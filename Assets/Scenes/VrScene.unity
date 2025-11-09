@@ -452,13 +452,49 @@ MonoBehaviour:
       m_Calls: []
   _whenHover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162506445}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162506445}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162506445}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -2183,7 +2219,7 @@ MonoBehaviour:
   animationName: Runner
   isSelected: 0
   animationSelection: {fileID: 253600109}
-  activationColour: {r: 43, g: 43, b: 13, a: 1}
+  activationColour: {r: 0.39215687, g: 0.39215687, b: 0.11764706, a: 1}
   frameMaterial: {fileID: 2100000, guid: e61596a30781b41c6ab0317ba37563d3, type: 2}
 --- !u!1 &178984127
 GameObject:
@@ -3239,10 +3275,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ebc66d07b0a946eda35414cafcb3d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frames: []
-  zoetropeFrames: []
-  selectedFrame: {fileID: 0}
-  tutorial: {fileID: 0}
+  frames:
+  - {fileID: 418362132}
+  - {fileID: 539826613}
+  - {fileID: 1362614250}
+  - {fileID: 162506445}
+  zoetropeFrames:
+  - {fileID: 341626788}
+  - {fileID: 714918328}
+  - {fileID: 1757339866}
+  - {fileID: 1435211671}
+  - {fileID: 1136380459}
+  - {fileID: 1645641138}
+  - {fileID: 1542129953}
+  - {fileID: 1274981332}
+  - {fileID: 160100538}
+  - {fileID: 1306428229}
+  - {fileID: 821304884}
+  - {fileID: 1494447283}
+  - {fileID: 1824852670}
+  selectedFrame: {fileID: 418362132}
+  tutorial: {fileID: 851217439}
 --- !u!1 &265233933
 GameObject:
   m_ObjectHideFlags: 0
@@ -4961,7 +5014,7 @@ MonoBehaviour:
   animationName: HorseRunning
   isSelected: 1
   animationSelection: {fileID: 253600109}
-  activationColour: {r: 43, g: 43, b: 13, a: 1}
+  activationColour: {r: 0.39215687, g: 0.39215687, b: 0.11764706, a: 1}
   frameMaterial: {fileID: 2100000, guid: d882cdf920d1f4b519e5880a4e9f515c, type: 2}
 --- !u!1 &428826573
 GameObject:
@@ -6583,7 +6636,7 @@ MonoBehaviour:
   animationName: ChildrenDancing
   isSelected: 0
   animationSelection: {fileID: 253600109}
-  activationColour: {r: 43, g: 43, b: 13, a: 1}
+  activationColour: {r: 0.39215687, g: 0.39215687, b: 0.11764706, a: 1}
   frameMaterial: {fileID: 2100000, guid: f704948dffc134c98a4aee5da5860401, type: 2}
 --- !u!1 &545718584
 GameObject:
@@ -9905,7 +9958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &851217438
 Transform:
   m_ObjectHideFlags: 0
@@ -11694,7 +11747,7 @@ MonoBehaviour:
   requestRecordAudioPermissionOnStartup: 0
   requestPassthroughCameraAccessPermissionOnStartup: 0
   _localDimming: 1
-  _trackingOriginType: 0
+  _trackingOriginType: 2
   usePositionTracking: 1
   useRotationTracking: 1
   useIPDInPositionTracking: 1
@@ -15877,7 +15930,7 @@ MonoBehaviour:
   animationName: Dancers
   isSelected: 0
   animationSelection: {fileID: 253600109}
-  activationColour: {r: 43, g: 43, b: 13, a: 1}
+  activationColour: {r: 0.39215687, g: 0.39215687, b: 0.11764706, a: 1}
   frameMaterial: {fileID: 2100000, guid: 84530a3bfe9b645e9bad81e7c256aba0, type: 2}
 --- !u!1 &1384417851
 GameObject:
@@ -17680,6 +17733,7 @@ GameObject:
   - component: {fileID: 1498776748}
   - component: {fileID: 1498776747}
   - component: {fileID: 1498776746}
+  - component: {fileID: 1498776749}
   m_Layer: 0
   m_Name: ISDK_RayCanvasInteraction
   m_TagString: Untagged
@@ -17764,6 +17818,76 @@ MonoBehaviour:
   _selectSurface: {fileID: 328170493}
   _movementProvider: {fileID: 0}
   _tiebreakerScore: 0
+--- !u!114 &1498776749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498776744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 1498776747}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1362614250}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1362614250}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1362614250}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1504071474
 GameObject:
   m_ObjectHideFlags: 0
@@ -22348,39 +22472,65 @@ MonoBehaviour:
   m_GameObject: {fileID: 1859267424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5626a0b1dc955a43be59ce7ea116678, type: 3}
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointableCanvas: {fileID: 0}
-  _suppressWhileDragging: 1
-  _whenBeginHighlight:
+  _pointable: {fileID: 1859267427}
+  _whenRelease:
     m_PersistentCalls:
       m_Calls: []
-  _whenEndHighlight:
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 418362132}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 418362132}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 418362132}
+        m_TargetAssemblyTypeName: Frame, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
-  _whenSelectedHovered:
+  _whenMove:
     m_PersistentCalls:
       m_Calls: []
-  _whenSelectedEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselectedHovered:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselectedEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenBeginHighlightWithObject:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenEndHighlightWithObject:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectedHoveredWithObject:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselectedHoveredWithObject:
+  _whenCancel:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1861034190 stripped
@@ -24563,6 +24713,7 @@ GameObject:
   - component: {fileID: 2006007675}
   - component: {fileID: 2006007674}
   - component: {fileID: 2006007673}
+  - component: {fileID: 2006007676}
   m_Layer: 0
   m_Name: ISDK_RayCanvasInteraction
   m_TagString: Untagged
@@ -24647,6 +24798,76 @@ MonoBehaviour:
   _selectSurface: {fileID: 989732321}
   _movementProvider: {fileID: 0}
   _tiebreakerScore: 0
+--- !u!114 &2006007676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006007671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 2006007674}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 539826613}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 539826613}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: ActivationLightOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 539826613}
+        m_TargetAssemblyTypeName: VRSelectionFrame, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2012100182
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,18 +10,7 @@ public abstract class Frame : MonoBehaviour
     public bool isSelected;
     public AnimationSelection animationSelection;
 
-    public void Select()
-    {
-        // send message to animation selection that this animation is select, changing zoetrope frames
-        animationSelection.SelectAnimation(this);
+    public abstract void Select();
 
-        // set is selected
-        isSelected = true;
-    }
-
-    public void Deselect()
-    {
-        // set is deselected
-        isSelected = false;
-    }
+    public abstract void Deselect();
 }

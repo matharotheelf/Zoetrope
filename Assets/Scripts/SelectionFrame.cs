@@ -70,4 +70,19 @@ public class SelectionFrame : Frame
 
         return false;
     }
+
+    public override void Select()
+    {
+        // send message to animation selection that this animation is select, changing zoetrope frames
+        animationSelection.SelectAnimation(this);
+
+        // set is selected
+        isSelected = true;
+    }
+
+    public override void Deselect()
+    {
+        // set is deselected
+        isSelected = false;
+    }
 }
