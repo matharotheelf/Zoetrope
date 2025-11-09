@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectionFrame : MonoBehaviour
+public class SelectionFrame : Frame
 {
     [SerializeField] Collider selectionFrameCollider;
-    [SerializeField] AnimationSelection animationSelection;
     [SerializeField] Color activationColour = new Color(43, 43, 13);
     [SerializeField] Material frameMaterial;
     [SerializeField] float interactionRange = 5f;
-    [SerializeField] bool isSelected;
-
-    public Material[] animationMaterials;
-    public string animationName;
 
     private Ray _ray;
     private RaycastHit _hit;
@@ -74,20 +69,5 @@ public class SelectionFrame : MonoBehaviour
         }
 
         return false;
-    }
-
-    private void Select()
-    {
-        // send message to animation selection that this animation is select, changing zoetrope frames
-        animationSelection.SelectAnimation(this);
-
-        // set is selected
-        isSelected = true;
-    }
-
-    public void Deselect()
-    {
-        // set is deselected
-        isSelected = false;
     }
 }

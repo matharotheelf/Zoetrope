@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class AnimationSelection : MonoBehaviour
 {
-    [SerializeField] SelectionFrame[] selectionFrames;
+    [SerializeField] Frame[] frames;
     [SerializeField] GameObject[] zoetropeFrames;
-    [SerializeField] SelectionFrame selectedAnimationFrame;
+    [SerializeField] Frame selectedFrame;
     [SerializeField] Tutorial tutorial;
 
-    public void SelectAnimation(SelectionFrame newAnimationFrame)
+    public void SelectAnimation(Frame newAnimationFrame)
     {
         // This deselects the correct animation frame so the new one can be chosen
         DeselectAnimationFrame();
@@ -22,13 +22,13 @@ public class AnimationSelection : MonoBehaviour
         ContinueTutorial();
 
         // Assign the new animation frame as selected
-        selectedAnimationFrame = newAnimationFrame;
+        selectedFrame = newAnimationFrame;
     }
 
     private void DeselectAnimationFrame()
     {
         // Sends a message to animation frame to deselect itself
-        selectedAnimationFrame.Deselect();
+        selectedFrame.Deselect();
     }
 
     private void ContinueTutorial()
@@ -40,7 +40,7 @@ public class AnimationSelection : MonoBehaviour
         }
     }
 
-    private void UpdateZoetropeFrames(SelectionFrame newAnimationFrame)
+    private void UpdateZoetropeFrames(Frame newAnimationFrame)
     {
         // loop through all the frames in the innerwall of the zoetrope and update with new animation frames
         for (int i = 0; i < zoetropeFrames.Length; i++)
